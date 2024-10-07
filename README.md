@@ -37,3 +37,19 @@ A PHP API for sending backup status emails using [PHPMailer](https://github.com/
    ```bash
    git clone https://github.com/your-username/php-mailer-api.git
    cd php-mailer-api
+
+2. **Install Dependencies: Ensure you have Composer installed. Then run:**
+
+    ```bash 
+      composer install
+
+3. **Set Up the Web Server:**
+   
+   - If using XAMPP, place the project folder inside C:\xampp\htdocs\.
+   - Start Apache via the XAMPP control panel.
+   - Access the API via http://localhost/mailer/index.php.
+
+## Configuration
+
+The SMTP settings are configured in src/send_email.php. Update the following variables with your SMTP server details:
+
