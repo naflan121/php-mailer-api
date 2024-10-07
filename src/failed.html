@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #F44336;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+       
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>{{backup_name}} Backup Failed</h1>
+        </div>
+        <div class="content">
+            <p><strong>Backup Name:</strong> {{backup_name}}</p>
+            <p><strong>Backup Server:</strong> {{backup_server}}</p>
+            <p><strong>Start Time:</strong> {{start_time}}</p>
+            <p><strong>End Time:</strong> {{end_time}}</p>
+            <p><strong>File Name:</strong> {{file_name}}</p>
+            <p><strong>File Size:</strong> {{file_size}} MB</p>
+        </div>
+        <div class="footer">
+            <p>This is an automated email from the backup system. Please do not reply.</p>
+        </div>
+    </div>
+</body>
+</html>
