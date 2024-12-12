@@ -35,7 +35,7 @@ A PHP API for sending backup status emails using [PHPMailer](https://github.com/
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/php-mailer-api.git
+   git clone https://github.com/naflan121/php-mailer-api.git
    cd php-mailer-api
 
 2. **Install Dependencies: Ensure you have Composer installed. Then run:**
